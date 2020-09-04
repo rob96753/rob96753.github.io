@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Reenie Beanie:300,400,700,900');
+
+/* custom variables */
+:root {
+  --accent-color: #00ff6c;
+  --highlight-color: #F9E79F;
+}
+/*
+
+ */
+* {
+  box-sizing: border-box;
+  transition: all ease-in-out 250ms;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.workstation {
+
+}
+
+/* buttons */
+
+.button {
+  display: inline-block;
+  font-size: 1.15rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: .5em 1.75em;
+}
+
+@media (min-width: 60rem) {
+  .button {
+    font-size: 1.5rem;
+  }
+}
+
+.button-small {
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+.button-accent {
+  color: #00ff6c;
+  border-color: #00ff6c;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+  background: #00ff6c;
+  color: #232323;
+}
+
+.button-dark {
+  color: #232323;
+  border-color: #232323;
+}
+
+.button-dark:hover,
+.button-dark:focus {
+  background: #232323;
+  color: #00ff6c;
+}
+
+/* Parallax
+=================== */
+.parallax--bg,
+.parallax--box {
+  transition: initial;
+}
+
+/* header
+=================== */
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 1em;
+}
+
+.header-text-box {
+  margin-top: .5rem;
+  padding: .5rem;
+  background: rgba(23,23,23,0);
+}
+
+.header-text-box h1 {
+  display: inline-block;
+  font-family: 'Reenie Beanie', sans-serif;
+  text-align: left;
+  font-size: 5rem;
+  color: var(--accent-color);
+  margin: 0rem;
+  padding: .5rem .5rem .5rem 0;
+  font-weight: 900;
+}
+
+.header-text-box h1 {
+  color: var(--accent-color);
+}
+
+.header-text-accompishments h1 {
+  color: var(--accent-color);
+}
+
+.navbar {
+  margin-top: 1.5rem;
+  color: black;
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 1em;
+}
+
+nav a {
+  font-weight: 900;
+  text-decoration: none;
+  padding: .5em;
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:visited{
+  color: #ddd;
+}
+
+@media (min-width:60rem) {
+  .header-text-box h1 {
+    float: left;
+  }
+
+  .navbar {
+    float: right;
+  }
+}
+
+/*
+
+ */
+.section {
+  background-size: cover;
+  background-position: center;
+  padding: 10em 0;
+  color: #FFF;
+}
+
+.section-hero-home{
+  background-image: url(../img/workstation_image.jpg);
+}
+
+.section-hero-accomplishments{
+  background-image: url("../img/PNNL_EMSL_CascadeSuperComputer.jpg");
+}
+
+@media (min-width: 60rem) {
+  .section-hero-home {
+    height: 100vh;
+    padding-top: 35vh;
+  }
+}
+
+
