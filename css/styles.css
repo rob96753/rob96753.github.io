@@ -25,8 +25,10 @@ img {
   height: auto;
 }
 
-.workstation {
-
+.container {
+  width: 100%;
+  max-width: 70em;
+  margin: 0;
 }
 
 /* buttons */
@@ -172,13 +174,37 @@ nav a:visited{
   background-image: url(../img/workstation_image.jpg);
 }
 
-.section-hero-accomplishments{
+.section-hero-projects{
   background-image: url("../img/PNNL_EMSL_CascadeSuperComputer.jpg");
+}
+
+.section-hero-about{
+  background-image: url("../img/python-code.jpg");
+}
+
+.section-hero-cv{
+  background-image: url("../img/python-code.jpg");
+  height: 25vh;
+}
+
+.section-hero-contact{
+  background-image: url("../img/contactInformation.jpg");
+  height: 100vh;
 }
 
 @media (min-width: 60rem) {
   .section-hero-home {
     height: 100vh;
+    padding-top: 35vh;
+  }
+
+  .section-hero-projects {
+    height: 50vh;
+    padding-top: 35vh;
+  }
+
+  .section-hero-cv {
+    height: 25vh;
     padding-top: 35vh;
   }
 }
@@ -190,7 +216,7 @@ nav a:visited{
   background-color: #232323;
   padding: 4em;
   width: 100vw;
-  margin-left: -2.5%;
+  margin-left: 0;
   outline: 2px solid #00ff6c;
   outline-offset: -2.5em;
   color: #FFF;
@@ -205,6 +231,12 @@ nav a:visited{
   top: .75em;
   background: #232323;
   padding: 0 .145em;
+}
+
+@media (min-width: 60rem) {
+  .home-about-textbox {
+    width: 100%;
+  }
 }
 
 @media (min-width: 25rem) {
@@ -238,9 +270,9 @@ nav a:visited{
     padding: 7em;
     outline-offset: -3.75em;
     margin-left: -2.5%;
-    top: -5em;
+    top: -7.5em;
     text-align: left;
-    box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
+    box-shadow: 0 0 4em 0 rgba(23,23,23,.3);
   }
 
   .home-about-textbox h1 {
