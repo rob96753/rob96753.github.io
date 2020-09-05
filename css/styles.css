@@ -303,7 +303,6 @@ nav a:visited{
 
   .home-about {
     background-image: url(../img/getdonations.jpg);
-    background-repeat: no-repeat;
     padding-bottom: 10em;
     width: 100%;
   }
