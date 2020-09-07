@@ -395,25 +395,6 @@ nav a:visited{
   }
 }
 
-/* project-summary */
-.project-summary {
-  margin: 3rem 2rem 3rem 2rem;
-  padding: 1rem 1rem 1rem 1rem;
-  color: var(--background-color);
-  background-color: var(--light-background-color);
-  text-align: left;
-}
-
-.project-summary a {
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: .2rem;
-  padding: 1rem 1rem 1rem 1rem
-}
-
-.project-summary p {
-  max-width: 70rem;
-}
 
 /* call-to-action  */
 
