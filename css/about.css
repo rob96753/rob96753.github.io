@@ -1,0 +1,26 @@
+:root {
+  --section-text-color: #232338;
+  --section-background-color: #FFFFFF;
+  --skill-background-color: #00FF6c;
+  --background-color: #232323;
+}
+
+
+body {
+  background-color: var(--background-color);
+  color: black;
+}
+
+.section-about-me {
+  background-color: var(--section-background-color);
+  color: var(--section-text-color);;
+  max-width: 90%;
+  padding: 5rem 10rem 5rem 10rem;
+  margin: 10rem 5% 10rem 5%;
+  border-radius: 1rem;
+}
+
+.section-about-me p {
+  text-align: justify;
+  font-size: 2rem;
+}

@@ -177,6 +177,31 @@ body {
   margin-right: 1rem;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 30rem;
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  text-align: center;
+  padding: .25rem 0;
+  border-radius: .3rem;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 @media (max-width:60rem) {
   .section-contact-info h1 {
     display: none;
@@ -206,3 +231,4 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 }
+
