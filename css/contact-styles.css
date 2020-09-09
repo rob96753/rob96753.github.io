@@ -1,0 +1,63 @@
+:root {
+  --section-text-color: #232338;
+  --section-background-color: #FFFFFF;
+  --skill-background-color: #00FF6c;
+}
+
+
+body {
+  background-color: #232323;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+.section-contact-info {
+  padding: 3rem 2rem 3rem 2rem;
+  background-color: #232323;
+  width: 100%;
+  font-size: 3rem;
+  display: flex;
+}
+
+.section-contact-info-Name {
+  width: 60%;
+}
+
+
+.section-contact-info-contact {
+  margin-top: -3rem;
+  width: 40%;
+  font-size: 2.5rem;
+}
+
+.section-contact-info h1 {
+  float: left;
+  text-align: left;
+  font-size: 4rem;
+}
+
+.section-contact-info span {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.section-contact-info p {
+  font-weight: normal;
+  text-align: left;
+}
+
+.section-contact-info a {
+  text-align: left;
+  font-weight: normal;
+  font-size: 3rem;
+  background-color: var(--section-background-color);
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 1rem;
+}
+
+.section-contact-info p:last-child {
+  margin-bottom: 1rem;
+}

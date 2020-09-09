@@ -48,6 +48,14 @@ body {
   text-align: left;
 }
 
+.section-contact-info a {
+  text-align: left;
+  font-weight: normal;
+  font-size: 3rem;
+  background-color: var(--section-background-color);
+  padding: 1rem 3rem 1rem 3rem;
+}
+
 .section-contact-info p:last-child {
   margin-bottom: 1rem;
 }
