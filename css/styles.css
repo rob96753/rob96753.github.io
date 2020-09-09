@@ -113,7 +113,7 @@ header {
   display: inline-block;
   font-family: 'Reenie Beanie', sans-serif;
   text-align: left;
-  font-size: 5rem;
+  font-size: 8rem;
   color: var(--accent-color);
   margin: 0rem;
   padding: .5rem .5rem .5rem 0;
@@ -149,7 +149,7 @@ nav a {
   text-decoration: none;
   padding: .5em;
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: 1.3rem;
   color: var(--accent-color);
 }
 
