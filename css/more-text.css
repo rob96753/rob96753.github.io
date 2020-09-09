@@ -51,6 +51,12 @@
 .text p {
 
 }
+@media (max-width: 80rem) {
+  .project-summary-item {
+    max-width: 50%;
+    font-size: 1.5rem;
+  }
+}
 
 @media (max-width: 60rem) {
   .project-summary-item {
@@ -59,8 +65,9 @@
   }
 
   .project-summary-anchor {
-    font-size: .9rem;
+    font-size: .8rem;
     padding: 0;
+    letter-spacing: 0rem;
   }
 }
 
