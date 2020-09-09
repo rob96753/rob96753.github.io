@@ -31,13 +31,15 @@
       <section id="project-text-hpc" class="project-summary-section">Rising licensing and maintenance costs of our existing DBMS platform necessitated moving to a more cost effective solution. I proposed we investigate different data storage/query solutions for our analysis project. My proposal resulted in <span class="dots" id="dots-text-hpc">...</span><span class="more-text" id="hidden-text-hpc">my leading the effort to identify system requirements and creating a team to evaluate alternatives for a new data storage platform that would host 100TB of data and support analysis through performant querying.
       The approach I took involved the following steps:
       <ul>
-        <li>Define requirements and constraints to include (money, size, power, cooling, ability to query, low side/high side--loading fast on H/S)</li>
+        <li>Define requirements and constraints to include (money, size, power, cooling, ability to query, "flat" architecture, low side/high side--loading fast on H/S)</li>
         <li>Define evaluation methods for systems and write an AoA -- what are the tactical advantages to an approach and what are the strategic advantages</li>
-        <li>Identify the challenges the future is likely to to bring</li>
-        <li>Building a team to execute the system evaluations</li>
-        <li>Come up with and execute a plan that proved efficient data loads and data extract</li>
-        <li>Choose a system that met constraints, then work with local resources to implement the system</li>
+        <li>Recognize the challenges the future is likely to to bring to our project</li>
+         <li>Identify the candidate systems based on a paper study</li>
+        <li>Build a team and plan for system evaluations with real data</li>
+        <li>Organize and Execute the plan to quantify effacy of each candidate system</li>
+        <li>Choose a system that met constraints, then work with local resources to implement the system.</li>
       </ul>
+        The system we purchased was a software only solution, that we ran on commodity Dell hardware. An issue we faced is the vendor suggested we use 10Gb as the interconnect. 10Gb hardware was very expensive at the time; We were able to accomplish equivalent performance running UDP over Infiniband-4 (IB-4).
     </span>
       </section>
     <button onclick="respondToButtonClick(this, 'project-text-hpc', 'hidden-text-hpc', 'dots-text-hpc')" class="button-read-more" id="button-hpc-show">Read more</button>
@@ -47,7 +49,14 @@
     <a class="project-summary-anchor" id="data_gen_simm">Data Generation and Simmulation</a>
       <section id="project-text-summulation" class="project-summary-section">
         The TMDS/MSAT Electronic Medical Records (EMR) system tracks service members' medical history through data integration from many internal and external data sources. The team doesn't have access to these systems, so I have created a number of tools to generate synthetic data files for training and testing. <span class="dots" id="dots-text-simmulation">...</span><span class="more-text" id="hidden-text-simmulation">
-        Ideally we would have copies of the same external applications so we can generate files to load longitudinal medical records into our EMR system.
+        Ideally we would have copies of the same external applications so we can generate files to load longitudinal medical records into our EMR system. This hasn't been feasible due to resource constraints. I have developed a few tools to create synthetic EMR for use in training and testing:
+        <ul>
+          <li>Create a random patient demographics generator in Python to ensure PII isn't inadvertently entered in the systems.</li>
+          <li>Blood donation synthetic data generator to automatically load blood for training and testing (Python)</li>
+          <li>Data message patient demographics remapper used to refresh messages so scenarios can be retested (Python)</li>
+          <li>Synthetic message generator to map patients into representative longitudinal medical records used in training and testing (Java/JSON/HAPI).</li>
+          <li>Message to JSON parser to support scenario based, data driven testing of application business rules.</li>
+        </ul>
       </span>
       </section>
       <button onclick="respondToButtonClick(this, 'project-text-simmulation', 'hidden-text-simmulation', 'dots-text-simmulation')" class="button-read-more" id="button-show-simmulation">Read more</button>
@@ -58,6 +67,13 @@
       <section id="project-text-analysis" class="project-summary-section">
         The ideal situation for product development is readily available access to a domain expert and client. Sitting side-by-side with said domain experts and clients is a force multiplier in developing meaningful data solutions and led significant, personal career advancements. <span class="dots" id="dots-text-analysis">...</span><span class="more-text" id="hidden-text-analysis">
 Working collaboratively with analysts resulted in a DevOps-like environment where features conceptualized and delivered in a matter of hours rather than months. SQL and Python provide light-weight tools to quickly demonstrate capability and then codify the result for deployment into a production environment.
+        These interactions with analysts and analysis consumers lead to:
+        <ul>
+          <li>Developing analytical tool that captured domain knowlege and put more analysts on equal footing.</li>
+          <li>Creating a GUI based query tool that allowed anaysts to focus on problems, not SQL queries and infrastructure.</li>
+          <li>Exploring and implementing ontologies that highlight hidden traits in the data.</li>
+          <li>Web-based application to deliver data and provide query capabilities outside the immediate work group.</li>
+        </ul>
       </span>
       </section>
       <button onclick="respondToButtonClick(this, 'project-text-analysis', 'hidden-text-analysis', 'dots-text-analysis')" class="button-read-more" id="button-show-analysis">Read more</button>
@@ -66,7 +82,13 @@ Working collaboratively with analysts resulted in a DevOps-like environment wher
     <div class="project-summary-item">
     <a class="project-summary-anchor" id="python_programming">Python Programming</a>
       <section id="project-text-python" class="project-summary-section">
-        Working collaboratively with analysts resulted in a DevOps-like environment where features conceptualized and delivered in a matter of hours rather than months. SQL and Python provide light-weight tools to quickly demonstrate capability and then codify the result for deployment into a production environment.<span class="dots" id="dots-text-python">...</span><span class="more-text" id="hidden-text-python">I chose Python to implement a graphical user interface, thick client, in order to dynamically generate and execute SQL queries for analysts. This was a data extraction method that allowed analysts to focus on the problem and not worry about how to get the data. Python became a lanugage I used to create tools, perform ETL, build data simulators, and automate IT functions.</span>
+        Working collaboratively with analysts resulted in a DevOps-like environment where features conceptualized and delivered in a matter of hours rather than months. SQL and Python provide light-weight tools to quickly demonstrate capability and then codify the result for deployment into a production environment.<span class="dots" id="dots-text-python">...</span><span class="more-text" id="hidden-text-python">I chose Python to implement a graphical user interface, thick client, in order to dynamically generate and execute SQL queries for analysts. This was a data extraction method that allowed analysts to focus on the problem and not worry about how to get the data. Python became a lanugage I used to create tools, perform ETL, build data simulators, and automate IT functions. Some other projects, besides the query tool, where I used python:
+      <ul>
+        <li>Extract, transform, and load (ETL) code of sensor data into a massively parallel processing database platform.</li>
+        <li>ETL for parsing client spreadsheets, then loading into a NoSQL analytical database platform.</li>
+        <li>Data generation and message remapping utilities.</li>
+        <li>System automation.</li>
+      </ul></span>
       </section>
       <button onclick="respondToButtonClick(this, 'project-text-python', 'hidden-text-python', 'dots-text-python')" class="button-read-more" id="button-show-python">Read more</button>
     </div>
@@ -74,8 +96,8 @@ Working collaboratively with analysts resulted in a DevOps-like environment wher
     <a class="project-summary-anchor" id="project_planning">Project Planning</a>
       <section id="project-text-planning" class="project-summary-section">
         I led a team with the charter to create a web-based analytical platform supporting remote sites across the US. I knew a linear waterfall methodology wouldn't yield a relevant solution. I sought a better approach and Iterative development (SCRUM) looked like a great alternative<span class="dots" id="dots-text-planning">...</span><span class="more-text" id="hidden-text-planning">What was the approach
-Who were the actors -- DoD was a funding source along with DOE. We had a Product Owner -- who wasn't really able to articulate what the product should be. A project manager who helped track budgets, prepare status reports, and take care of project administration, developers, technical writer, tester, project admin, and PI. I was basically charged with identifying the requirements, direction, and tasks we were taking (I was acting as the surrogate product owner).
-I recruited the team members at PNNL and identified the approach for running the project (SCRUM) which we took the team, including the product owner, to training in Seattle.
+Who were the actors -- DoD was a funding source along with DOE. We had a Product Owner -- who wasn't really able to articulate what the product should be. A project manager who helped track budgets, prepare status reports, and take care of project administration, developers, technical writer, tester, project admin, and PI. As PI, I identifying the requirements (usually working with the Product Owner), techical direction, and tasks we were taking on.
+I recruited the team members at PNNL and identified the approach for running the project (SCRUM) which we took the team, including the product owner, to training in Seattle. We were able to follow the SCRUM process, since team members had been trained in the process and bought into the approach. We were able to deliver a system that eventually replaced the thick-client Python GUI.
 </span>
       </section>
       <button onclick="respondToButtonClick(this, 'project-text-planning', 'hidden-text-planning', 'dots-text-planning')" class="button-read-more" id="button-show-planning">Read more</button>
@@ -83,7 +105,7 @@ I recruited the team members at PNNL and identified the approach for running the
     <div class="project-summary-item">
     <a class="project-summary-anchor" id="web_development">Web Development</a>
       <section id="project-text-webdev" class="project-summary-section">
-        Learning and staying current challenges all of us in the IT profession. It's also what keeps IT interesting. Web-based applications aren't new, but serious Web-based application development is new to me. I've spent a good deal of my free time the last year studying HTML/CSS/JS, the MERN stack and<span class="dots" id="dots-text-webdev">...</span><span class="more-text" id="hidden-text-webdev"> the technologies that support development of modern applications and architectures. My objective isn't simply to learn about the technologies; it's to expand my skill set and follow my passion for developing useful products for end users. There is a great deal of satisfaction to creating tools people use to address critical problems. The satisfaction is greater when the tool is up front and not hidden in the background. Creating the UI also provides opportunities to work collaboratively with the end users.</span>
+        Learning and staying current challenges all of us in the IT profession. It's also what keeps IT interesting. Web-based applications aren't new, but serious Web-based application development is new to me. I've spent a good deal of my free time the last year studying HTML/CSS/JS, the MERN stack and<span class="dots" id="dots-text-webdev">...</span><span class="more-text" id="hidden-text-webdev"> the technologies that support development of modern applications and architectures. My objective isn't simply to learn about the technologies; it's to expand my skill set and follow my passion for developing useful products for end users. There is a great deal of satisfaction to creating tools people use to address critical problems. The satisfaction is greater when the tool is up front and not hidden in the background. Creating the UI also provides opportunities to work collaboratively with the end users. My ultimate goal is to land another position leading a team in developing or growing a Web-based tool that benefits the public.</span>
       </section>
       <button onclick="respondToButtonClick(this, 'project-text-webdev', 'hidden-text-webdev', 'dots-text-webdev')" class="button-read-more" id="button-show-webdev">Read more</button>
     </div>
