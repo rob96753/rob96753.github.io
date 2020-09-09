@@ -18,8 +18,8 @@ body {
   padding: 3rem 2rem 3rem 2rem;
   background-color: #232323;
   width: 100%;
-  display: flex;
   font-size: 3rem;
+  display: flex;
 }
 
 .section-contact-info-Name {
