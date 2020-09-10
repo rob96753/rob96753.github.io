@@ -462,20 +462,12 @@ nav a:visited{
     margin-top: 0;
   }
 
-  [class^=col-]:first-child {
-    padding-left: 0;
-  }
-
-  [class^=col-]:last-child {
-    padding-right: 0;
-  }
-
   .col-3 {
-    width: 50%;
+    width: 80%;
   }
 
   .col-1 {
-    width: 16.6666%;
+    width: 80%;
   }
 }
 
