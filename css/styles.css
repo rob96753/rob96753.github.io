@@ -426,10 +426,16 @@ nav a:visited{
 [class^=col-] {
   width: 100%;
   margin-top: 1em;
+  line-height: 1.5rem;
 }
 
 [class^=col-]:first-child {
   margin-top: 0;
+}
+
+[class^=col] a {
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .col-1 {
@@ -437,6 +443,11 @@ nav a:visited{
   float: left;
 }
 
+.col-3 {
+  text-align: justify;
+  padding: 2rem;
+  margin: 3rem 3rem 0rem 3rem;
+}
 
 @media (min-width: 30rem) {
 
