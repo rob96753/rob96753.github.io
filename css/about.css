@@ -1,7 +1,7 @@
 :root {
   --section-text-color: #232338;
   --section-background-color: #FFFFFF;
-  --skill-background-color: #00FF6c;
+  --accent-color: #00FF6c;
   --background-color: #232323;
 }
 
@@ -22,5 +22,15 @@ body {
 
 .section-about-me p {
   text-align: justify;
+  font-size: 2rem;
+}
+
+.link-to-funpage {
+  margin-top: 70rem;
+}
+
+.link-to-funpage a {
+  text-decoration: none;
+  color: var(--accent-color);
   font-size: 2rem;
 }

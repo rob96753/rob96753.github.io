@@ -243,7 +243,12 @@ nav a:visited{
 }
 
 .section-hero-contact{
-  background-image: url("../img/Biometrics-Large.jpg");
+  background-image: url(../img/Biometrics-Large.jpg);
+  height: 50vh;
+}
+
+.section-hero-funpage{
+  background-image: url("../img/Nembrotha_kubaryana_2.jpg");
   height: 50vh;
 }
 
