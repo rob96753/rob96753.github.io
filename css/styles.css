@@ -429,9 +429,9 @@ nav a:visited{
 /* columns */
 
 [class^=col-] {
-  width: 100%;
   margin-top: 1em;
   line-height: 1.5rem;
+  width: 100%;
 }
 
 [class^=col-]:first-child {
@@ -443,19 +443,19 @@ nav a:visited{
   text-transform: uppercase;
 }
 
-.col-1 {
-  width: 50%;
-  float: left;
-}
-
 .col-3 {
-  width:30%;
+  width:50%;
   text-align: justify;
   padding: 2rem;
   margin: 3rem 3rem 0rem 3rem;
 }
 
-@media (min-width: 30rem) {
+.col-1 {
+  width: 33.333334%;
+  float: left;
+}
+
+@media (min-width: 40rem) {
 
   [class^=col-] {
     float: left;
@@ -463,12 +463,39 @@ nav a:visited{
     margin-top: 0;
   }
 
+  [class^=col-]:first-child {
+    padding-left: 0;
+  }
+
+  .col-3 {
+    width: 50%;
+  }
+
+  .col-1 {
+    width: 16.6666%;
+  }
+}
+
+@media (max-width: 30rem) {
+
+  [class^=col-] {
+    float: left;
+    margin-top: 0;
+  }
+
+  [class^=col-]:first-child {
+    padding-left: 0;
+  }
+
   .col-3 {
     width: 80%;
   }
 
   .col-1 {
-    width: 80%;
+    width: 100%;
+  }
+  .col-1:last-child {
+    margin-bottom: 1rem;
   }
 }
 
