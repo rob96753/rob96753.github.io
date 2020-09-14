@@ -19,27 +19,26 @@ body {
   background-color: #232323;
   width: 100%;
   font-size: 3rem;
-  display: flex;
+  display: flow;
 }
 
-.section-contact-info-Name {
-  width: 60%;
-}
-
-
-.section-contact-info-contact {
-  margin-top: -3rem;
-  width: 40%;
-  font-size: 2.5rem;
-}
-
-.section-contact-info h1 {
-  float: left;
+.linked-in {
   text-align: left;
-  font-size: 4rem;
+  font-weight: normal;
+  font-size: 3rem;
+  width: 4.5rem;
+  background-color: var(--section-background-color);
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 1rem;
 }
 
-.section-contact-info span {
+.my-name {
+  text-align: left;
+  font-size: 5rem;
+
+}
+
+.phone, .email, .address {
   font-weight: bold;
   margin-right: 1rem;
 }
@@ -49,67 +48,40 @@ body {
   text-align: left;
 }
 
-.section-contact-info a {
-  text-align: left;
+.gap {
+  margin-left: 14rem;
   font-weight: normal;
-  font-size: 3rem;
-  background-color: var(--section-background-color);
-  padding: 1rem 3rem 1rem 3rem;
-  border-radius: 1rem;
 }
+
 
 .section-contact-info p:last-child {
   margin-bottom: 1rem;
 }
 
-@media (max-width:60rem) {
+@media (max-width:40rem) {
+  .my-name {
+    text-align: left;
+    font-size: 2rem;
+  }
+
   .section-contact-info {
-    padding: .3rem .2rem .3rem .2rem;
+    padding: 3rem 2rem 3rem 2rem;
     background-color: #232323;
+    width: 100%;
     font-size: 1rem;
     display: flow;
-    text-align: left;
-    grid-template-columns: 1fr;
   }
 
-  .section-contact-info h1 {
-    padding: .3rem .2rem .2rem 2rem;
-    background-color: #232323;
-    width: 20%;
-    font-size: 1rem;
-    float: left;
-  }
-
-  .section-contact-info a {
-    text-align: left;
+  .gap {
+    margin-left: 5rem;
     font-weight: normal;
-    font-size: 1rem;
-    background-color: var(--section-background-color);
-    padding: .1rem .3rem .1rem .3rem;
-    width: 16.666667%;
-    border-radius: 1rem;
-    float: left;
   }
 
-  .section-contact-info p {
-    font-weight: normal;
-    text-align: left;
-    font-size: 1rem;
-    float: left;
+  .linked-in {
+    margin-top: 3rem;
+    font-size: 2rem;
+    width: 3rem;
+    padding: .7rem .7rem .7rem .7rem;
   }
-
-  .section-contact-info-contact {
-    margin-top: 0rem;
-    width: 33.33334%;
-    font-size: 1rem;
-    float: left;
-  }
-
-}
-
-@media (max-width:40rem) {
-
-}
-@media (max-width:37rem) {
 
 }
