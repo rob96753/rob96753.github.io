@@ -88,7 +88,6 @@ body {
   grid-gap: 1rem;
   border-radius: 1.5rem;
   background-color: var(--section-background-color);
-  width: 95%;
 }
 
 .item-skill {
@@ -112,7 +111,6 @@ body {
   padding: 2rem 10rem 2rem 10rem;
   margin: 2rem 2rem 0rem 2rem;
   background-color: var(--section-background-color);
-  width: 95%;
 }
 
 .section-job-description {
@@ -145,7 +143,6 @@ body {
 
 
 .section-education {
-  margin-top: 2rem;
   margin: 2rem 2rem 0rem 2rem;
   padding: 1rem;
   grid-gap: 3rem;
@@ -190,12 +187,12 @@ body {
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 30rem;
   background-color: var(--background-color);
   color: var(--accent-color);
   text-align: center;
-  padding: .25rem 0;
+  padding: .25rem 1rem;
   border-radius: .3rem;
+  text-transform: capitalize;
 
   /* Position the tooltip text - see examples below! */
   position: absolute;
@@ -276,4 +273,47 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+@media (max-width:37rem) {
+  .section-objective-summary {
+    width:100%;
+    text-align: justify;
+    margin: .5rem;
+    padding: .2rem .2rem .2rem .2rem;
+  }
+
+  .section-skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .work-history {
+    padding: .2rem .2rem .2rem .2rem;
+    margin: .5rem;
+    text-align: justify;
+    width: 100%;
+
+  }
+
+  .section-education {
+    font-size: 1rem;
+    grid-template-columns:1fr;
+  }
+
+  .section-education h1 {
+    font-size: 1.5rem;
+  }
+
+  .section-education h2 {
+    font-size: 1rem;
+  }
+
+  .section-education p {
+    margin: .2rem 0rem 0rem 0rem;
+    font-size: .8rem;
+    font-weight: normal;
+    text-align: justify;
+  }
+}
+
 
