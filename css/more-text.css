@@ -14,6 +14,8 @@
   color: var(--background-color);
   background-color: var(--light-background-color);
   text-align: left;
+  display: flow;
+  float: left;
   min-height: 125vh;
 }
 
