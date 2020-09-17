@@ -204,35 +204,7 @@ body {
   visibility: visible;
 }
 
-@media (max-width:60rem) {
-  .section-contact-info h1 {
-    display: none;
-  }
 
-  .section-contact-info-contact {
-    width: 100%;
-    text-align: left;
-    padding: 1rem 1rem 1rem 1rem;
-    margin: 0;
-  }
-
-  .section-objective-summary {
-    padding: 1rem;
-  }
-
-  .section-objective-summary h1 {
-    font-size: 1rem;
-  }
-  .section-objective-summary p {
-    text-align: left;
-    padding: 0;
-    margin: .2rem;
-  }
-
-  .section-skills {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 
 @media (max-width:80rem) {
   .section-skills {
@@ -267,6 +239,37 @@ body {
     }
   }
 
+
+@media (max-width:60rem) {
+  .section-contact-info h1 {
+    display: none;
+  }
+
+  .section-contact-info-contact {
+    width: 100%;
+    text-align: left;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0;
+  }
+
+  .section-objective-summary {
+    padding: 1rem;
+  }
+
+  .section-objective-summary h1 {
+    font-size: 1rem;
+  }
+  .section-objective-summary p {
+    text-align: left;
+    padding: 0;
+    margin: .2rem;
+  }
+
+  .section-skills {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 @media (max-width:40rem) {
   .section-skills {
     display: grid;
@@ -286,7 +289,8 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
-    margin: .5rem;
+    margin: .2rem;
+    padding: .2rem;
   }
   .work-history {
     padding: .2rem .2rem .2rem .2rem;
@@ -299,6 +303,7 @@ body {
   .section-education {
     font-size: 1rem;
     grid-template-columns:1fr;
+    margin: .5rem;
   }
 
   .section-education h1 {
@@ -318,3 +323,10 @@ body {
 }
 
 
+@media (max-width:25rem)  {
+  .section-skills {
+    margin: .2rem;
+    padding: .5rem;
+  }
+
+}
