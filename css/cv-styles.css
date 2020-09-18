@@ -2,6 +2,8 @@
   --section-text-color: #232338;
   --section-background-color: #FFFFFF;
   --skill-background-color: #00FF6c;
+  --accent-color: #00FF6c;
+  --header-text-color: #FFF;
 }
 
 
@@ -21,6 +23,8 @@ body {
   font-size: 3rem;
   display: flex;
 }
+
+
 
 .section-contact-info-Name {
   width: 60%;
@@ -221,6 +225,22 @@ body {
   visibility: visible;
 }
 
+.linked-in{
+  text-align: left;
+  font-weight: normal;
+  font-size: 3rem;
+  background-color: var(--section-background-color);
+  width: 3rem;
+  height: 3.5rem;
+  padding: 0;
+  border-radius: .5rem;
+}
+
+.linked-in a {
+  padding: 0;
+  margin: .2rem;
+}
+
 @media (max-width:80rem) {
   .section-skills {
     display: grid;
@@ -393,6 +413,24 @@ body {
   }
 
   .section-education p span{
+    font-weight: bold;
+  }
+
+  .header-text-box h1 {
+    color: var(--header-text-color);
+    font-weight: bold;
+  }
+
+  nav a {
+    color: var(--header-text-color);
+    font-weight: bold;
+  }
+
+  nav a:hover,
+  nav a:focus,
+  nav a:visited{
+    color: var(--header-text-color);
+    background-color: var(--accent-color);
     font-weight: bold;
   }
 }
