@@ -2,7 +2,7 @@
 function respondToButtonClick(readMoreBtn, textElement, hiddenElement, dotsElement){
   let textElementId = document.getElementById(textElement);
   let hiddenTextElementId = document.getElementById(hiddenElement);
-  let dotsTextELementId = document.getElementById(dotsElement);
+  let dotsTextElementId = document.getElementById(dotsElement);
 
   if (readMoreBtn.innerText.toUpperCase() === "Read More".toUpperCase()) {
     readMoreBtn.innerText = "Read Less";
