@@ -108,6 +108,17 @@
   margin: 4rem;
 }
 
+#image-pilikai img{
+  max-height: 605px;
+  max-width: 605px;
+}
+
+@media (max-width:90rem) {
+  .circle-photo {
+    margin-top: 5em;
+  }
+}
+
 @media (max-width:70rem) {
   .content {
     -moz-column-count: 3;
