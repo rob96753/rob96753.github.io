@@ -248,7 +248,8 @@ nav a:visited{
 }
 
 .section-hero-funpage{
-  background-image: url("../img/Nembrotha_kubaryana_2.jpg");
+  background-image: url("../img/waihee-ridge-enhanced.jpg");
+  border-radius: 2rem;
   height: 50vh;
 }
 
