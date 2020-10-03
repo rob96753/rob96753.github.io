@@ -38,7 +38,7 @@
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: .2rem;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem .5rem 1rem .5rem;
 }
 
 .project-summary-anchor:first-of-type {
