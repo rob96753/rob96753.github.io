@@ -183,6 +183,14 @@ body {
   text-transform: capitalize;
 }
 
+.section-education li {
+  font-size: 2rem;
+  margin: .5rem 2rem 0rem 2rem;
+  padding-left: 2rem;
+  text-transform: capitalize;
+  list-style-type: none;
+}
+
 .section-education h2 {
   font-size: 1.5rem;
   margin: .2rem 2rem 0rem 2rem;
