@@ -1,9 +1,10 @@
 :root {
   --section-text-color: #232338;
-  --section-background-color: #FFFFFF;
+  --section-background-color: #d6d3d3;
   --skill-background-color: #00FF6c;
   --accent-color: #00FF6c;
   --header-text-color: #FFF;
+  --experience-summary-text-color: #232338;
 }
 
 
@@ -77,11 +78,38 @@ body {
   font-size: 2rem;
   text-transform: uppercase;
 }
-.section-objective-summary p{
-  text-align: justify;
+.experience-p{
+  text-align: left;
   font-size: 1.5rem;
   color: var(--section-text-color);
   line-height: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+* Tooltip text */
+.experience-p .details {
+  visibility: hidden;
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  text-align: center;
+  padding: .25rem 1rem;
+  border-radius: .3rem;
+  text-transform: capitalize;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  left: 4rem;
+  top: 2rem;
+  z-index: 1;
+}
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+.experience-p:hover .details {
+  visibility: visible;
+}
+
+
+.experience-p:last-child {
+  padding-bottom: 2rem;
 }
 
 .div-skills {
@@ -132,7 +160,7 @@ body {
 
 .section-learning {
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
 }
 
@@ -298,11 +326,19 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  .section-learning {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
   @media (max-width:70rem) {
     .section-skills {
       display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .section-learning {
       grid-template-columns: 1fr 1fr 1fr;
     }
 
