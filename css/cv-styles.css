@@ -78,37 +78,75 @@ body {
   font-size: 2rem;
   text-transform: uppercase;
 }
-.experience-p{
+
+.section-objective-summary ul {
+  list-style-position: outside;
+}
+
+.experience-item{
   text-align: left;
   font-size: 1.5rem;
   color: var(--section-text-color);
   line-height: 1.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: .5rem;
 }
 
-* Tooltip text */
-.experience-p .details {
+/* experioence tooltip formatting */
+.ui-tooltip, .arrow:after {
+  background: black;
+  width: 30%;
+  border: 2px solid white;
+}
+
+.ui-helper-hidden-accessible {
   visibility: hidden;
-  background-color: var(--background-color);
-  color: var(--accent-color);
-  text-align: center;
-  padding: .25rem 1rem;
-  border-radius: .3rem;
+}
+
+.ui-tooltip {
+  padding: 1rem 1rem;
+  color: white;
+  border-radius: 20px;
+  font: bold 1rem "Helvetica Neue", Sans-Serif;
   text-transform: capitalize;
-  /* Position the tooltip text - see examples below! */
+  box-shadow: 0 0 .5rem black;
+}
+
+/* arrow*/
+.arrow {
+  width: 70px;
+  height: 16px;
+  overflow: hidden;
   position: absolute;
-  left: 4rem;
-  top: 2rem;
-  z-index: 1;
+  left: 50%;
+  margin-left: -35px;
+  bottom: -16px;
 }
-
-  /* Show the tooltip text when you mouse over the tooltip container */
-.experience-p:hover .details {
-  visibility: visible;
+.arrow.top {
+  top: -16px;
+  bottom: auto;
 }
+.arrow.left {
+  left: 20%;
+}
+.arrow:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  width: 25px;
+  height: 25px;
+  box-shadow: 6px 5px 9px -9px black;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.arrow.top:after {
+  bottom: -20px;
+  top: auto;
+}
+/* end arrow*/
 
-
-.experience-p:last-child {
+.experience-item:last-child {
   padding-bottom: 2rem;
 }
 
