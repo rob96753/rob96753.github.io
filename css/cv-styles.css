@@ -364,6 +364,17 @@ body {
   margin: .2rem;
 }
 
+@media (max-width:90rem) {
+  .section-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .section-learning {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 @media (max-width:80rem) {
   .section-skills {
     display: grid;
@@ -372,6 +383,16 @@ body {
 
   .section-learning {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .item-learning {
+    font-weight: 700;
+}
+
+@media (max-width:76rem) {
+
+  .section-learning {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -405,6 +426,11 @@ body {
     }
   }
 
+@media (max-width:64rem) {
+  .section-learning {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 @media (max-width:60rem) {
   .section-contact-info h1 {
@@ -434,6 +460,8 @@ body {
   .section-skills {
     grid-template-columns: 1fr 1fr;
   }
+
+  
 }
 
 @media (max-width:48rem) {
