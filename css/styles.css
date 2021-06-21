@@ -69,6 +69,14 @@ img {
   border-color: #00ff6c;
 }
 
+.button-hightlight {
+    color: white;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+    font-weight: 900;
+    border-color: white;
+}
+
 .button-light {
   color: #f2f2f2;
   border-color: #f2f2f2;
