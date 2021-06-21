@@ -69,6 +69,11 @@ img {
   border-color: #00ff6c;
 }
 
+.button-light {
+  color: #f2f2f2;
+  border-color: #f2f2f2;
+}
+
 .button-accent:hover,
 .button-accent:focus {
   background: #00ff6c;
