@@ -77,6 +77,13 @@ img {
     border-color: white;
 }
 
+.button-hightlight:hover,
+.button-hightlight:focus {
+    color: #232323;
+    background: #00ff6c;    
+    border-color: #232323;
+}
+
 .button-light {
   color: #f2f2f2;
   border-color: #f2f2f2;
