@@ -545,22 +545,7 @@ body {
     padding: .2rem .2rem .2rem .2rem;
   }
 
-  .section-skills {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: .2rem;
-    padding: .2rem;
-    width:100%;
-  }
-
-  .section-learning {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: .2rem;
-    padding: .2rem;
-    width:100%;
-  }
-
+  
 
 
   .work-history {
@@ -645,10 +630,18 @@ body {
     font-size: .8rem;
   }
 
-  .section-skills {
-    border-radius: .5rem;
-    margin: .2rem;
-    padding: .5rem;
+  .section-skills, .section-learning {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: .7rem;
+    font-weight: bold;
   }
 
+  .div-skills h1 {
+    font-size: 1rem;
+  }
+
+  .div-learning h1 {
+    font-size: 1rem;
+  }
 }
