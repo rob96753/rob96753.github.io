@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jenna's Book Review</title>
+        <script type="text/javascript" src="Resources/Thumbnails.js"></script>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript">
+
+            function load() {
+                //alert(thumbnails.length);
+                var div = document.getElementById('data');
+                for(var i=0;i<thumbnails.length;i++) {
+                    div.innerHTML = div.innerHTML + "<a href=\"" + "bookDetails.html?book=" + thumbnails[i].key + "\">" + "<img class='thumbnail' src=\"" + 
+                        thumbnails[i].thumbnail + "\" alt=\"" + thumbnails[i].title + "\"></a>";
+                }
+            }
+        </script>
+    </head>
+<body onload="load()">
+    <div id="data" class="flex-container">
+
+    </div>
+
+</body>
+</html>

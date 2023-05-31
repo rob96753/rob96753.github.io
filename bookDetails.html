@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Book Details</title>
+        <script type="text/javascript" src="Resources/bookDetails.js"></script>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript">
+            function getParameterByName(name, url) {
+                if (!url) url = window.location.href;
+                name = name.replace(/[\[\]]/g, '\\$&');
+                var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }
+
+            function load() {
+                var book = getParameterByName('book');
+                if (details.hasOwnProperty(book)) {
+                    var bookDetails = details[book];
+                    document.getElementById("book title").innerText = bookDetails.title;
+                    document.getElementById("author").innerText = bookDetails.author;
+                    document.getElementById("publication date").innerText = bookDetails.pubDate;
+                    document.getElementById("publisher").innerText = bookDetails.publisher;
+                    document.getElementById("description").innerText = bookDetails.description;
+
+                    document.getElementById("rating").innerText = bookDetails.rating;
+                    document.getElementById("reading level").innerText = bookDetails.readingLevel;
+                    document.getElementById("pages").innerText = bookDetails.pages;
+                    document.getElementById("price").innerText = bookDetails.price;
+                    document.getElementById("genre").innerText = bookDetails.genre;
+                    document.getElementById("related").innerText = bookDetails.related;
+                    document.getElementById("awards").innerText = bookDetails.awards;
+                    document.getElementById("isbn").innerText = bookDetails.isbn;
+                } else {
+                    alert(`Key ${book} Not Found`);
+                }
+
+            }
+        </script>
+    </head>
+    <body onload="load()">
+        <div id="key">
+            <p id="book title" class="book-title"></p>
+            <hr>
+            <div class="flex-meta-text-container">
+                <span>
+                <label for="author">Author</label><p id="author" class="meta-text"></p>
+                </span>
+                <label>Published</label><p id="publication date" class="meta-text"></p>
+                <label>Publisher</label><p id="publisher"  class="meta-text"></p>
+            </div>
+            <div class="flex-meta-text-container"></div>
+                <label>Description</label><br><textarea id="description" class="book-description" rows="6"></textarea><br>
+                <label>Rating</label><p id="rating" class="meta-text"></p>
+                <label>Reading Level</label><p id="reading level" class="meta-text"></p>
+                <label>Pages</label><p id="pages" class="meta-text"></p>
+                <label>Price</label><p id="price" class="meta-text"></p>
+            </div>
+            <label>Genre</label><br><textarea id="genre" class="book-description" rows="2"></textarea><br>
+            <label>Awards</label><br><textarea id="awards" class="book-description" rows="6"></textarea><br>
+            <label>Related Titles</label><p id="related" class="meta-text" style="width: 90%;height:20px"></p>
+            <label>ISBN-13</label><p id="isbn" class="meta-text"></p>
+        </div>
+    </body>
+</html>

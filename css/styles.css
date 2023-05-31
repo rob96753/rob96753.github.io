@@ -1,0 +1,87 @@
+
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    }
+
+  body {
+    background-color: lightblue;
+    color: black;
+  }
+
+  p {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-family: verdana;
+    font-size: 20px;
+    background-color: lightblue;
+  }
+
+  label {
+    font-weight: bolder;
+    font-size: 20px;
+    width: 20%;
+    text-align: left;
+  }
+
+  .wide-label {
+    width: 90%;
+  }
+
+
+.book-description {
+  font-family: verdana;
+  font-size: 18px;
+  font-weight: normal;
+  background-color:  rgb(170, 222, 240);
+  width: 98%;
+  border-radius: 1%;
+  border-color: lightblue;
+  word-wrap: break-word;
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.meta-text {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-family: verdana;
+  font-size: 16px;
+  font-weight: normal;
+  width: 18%;
+  background-color: rgb(170, 222, 240);
+}
+
+.book-title {
+  margin-bottom: 0px;
+  padding-left: 20px;
+  font-size: 40px;
+  font-weight: normal;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgb(152, 155, 156);
+}
+
+.thumbnail {
+  border-radius: 5%;
+  width: 200px;
+  height: 400px;
+  margin: 1em;
+}
+
+.flex-container > div {
+  width: 33%;
+  margin: 1em;
+  text-align: center;
+}
+
+.flex-meta-text-container > div {
+  width: 16em;
+  margin: 1em;
+  text-align: center;
+}
