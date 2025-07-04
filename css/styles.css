@@ -340,14 +340,15 @@ nav a:visited{
   }
 
   .home-about {
-    background-image: url(../img/getdonations.jpg);
+    /*background-image: url(../img/getdonations.jpg);*/
+    background-image: url(../img/aiAgentScreenShot.jpg);
     padding-bottom: 10em;
     width: 100%;
   }
 
   .home-about-textbox {
-    width: 50%;
-    padding: 7em;
+    width: 60%;
+    padding: 5em;
     outline-offset: -3.75em;
     margin-left: -2.5%;
     top: -1.5em;
