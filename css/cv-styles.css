@@ -75,13 +75,14 @@ body {
 
 .section-experience-summary h1 {
   color: var(--section-text-color);
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
 .experience-summary-p {
   text-align: left;
   color: var(--section-text-color);
+  font-size: 1.5rem;
 }
 
 .section-objective-summary ul {
@@ -237,7 +238,7 @@ body {
 .work-history-title h1 {
   color: var(--section-text-color);
   margin: 1rem 0 2rem 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   text-align: center;
 }
@@ -255,15 +256,23 @@ body {
   text-align: left;
 }
 
+.section-job-description h1 {
+  font-size: 2rem;
+  margin: .5rem 0rem 0rem 0rem;
+  text-align: left;
+  text-transform: capitalize;
+}
+
 .job-description {
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 
 
 .job-description h1 {
   color: var(--section-text-color);
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -388,6 +397,7 @@ body {
 
   .item-learning {
     font-weight: 700;
+  }
 }
 
 @media (max-width:76rem) {
@@ -556,9 +566,6 @@ body {
     font-size: .8rem;
   }
 
-  .work-history-title h1 {
-    font-size: 2rem;
-  }
 
   .work-history p {
     font-size: 1rem;

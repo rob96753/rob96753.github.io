@@ -70,34 +70,42 @@
     <div class="project-summary-item">
       <a class="project-summary-anchor" id="data_gen_simm">Data Generation and Simmulation</a>
       <section id="project-text-summulation" class="project-summary-section">
-        The TMDS/MSAT Electronic Medical Records (EMR) system tracks service members' medical history through data
-        integration from many internal and external data sources. The team doesn't have access to these systems, so I
-        have created a number of tools to generate synthetic data files for training and testing. <span class="dots"
+        The TMDS/MSAT Electronic Medical Records (EMR) system maintains service members’ medical histories by integrating
+        data from numerous internal and external sources. Because the team does not have direct access to these external 
+        systems, I developed a suite of tools to generate synthetic data for training and testing. Ideally, we would 
+        replicate the external applications to produce full longitudinal medical record datasets, but this has not been 
+        feasible due to resource constraints. To address these gaps, I created several tools to generate high-fidelity synthetic 
+        EMR data: <span class="dots"
           id="dots-text-simmulation">...</span><span class="more-text" id="hidden-text-simmulation">
-          Ideally we would have copies of the same external applications so we can generate files to load longitudinal
-          medical records into our EMR system. This hasn't been feasible due to resource constraints. I have developed a
-          few tools to create synthetic EMR for use in training and testing:
+          Ideally we would have copies of the same external applications so we can generate synthetic files to load longitudinal
+          medical records into our EMR system. Using live data and the inherent risks of masking records wasn't acceptable to the 
+          Governemtn or team. To address these challenges, I developed a few tools to create synthetic EMR for use in training and 
+          testing:
           <ul>
-            <li>Worked with domain experts to identify scenarios that matched what would be expected from clinical
-              records as well as data sets that tested the TMDS/MSAT system.</li>
-            <li>Create a random patient demographics generator in Python to ensure PII isn't inadvertently entered in
-              the systems. Simmulated patient medical data was used for training in and testing of TMDS/MSAT systems.
+            <li>Collaborated with domain experts to design realistic clinical scenarios and data sets that reflect expected 
+              medical record patterns and thoroughly exercise TMDS/MSAT functionality.</li>
+            <li>Built a Python-based synthetic-demographics generator to ensure no real PII enters the system. The tool 
+              produces fully synthetic patient profiles and simulated medical data for use in training and system testing.
             </li>
-            <li>Implemented a Blood donation synthetic data generator to automatically create blood donations for
-              training and testing (Python).</li>
+            <li>Implemented a synthetic blood-donation data generator (Python) that automatically creates blood-donation 
+              records for training and testing workflows.</li>
             <li>Data message patient demographics remapper used to refresh messages so scenarios can be retested
               (Python); Changed the patient demographics information so external data files could be reused in testing
               and training TMDS/MSAT.</li>
-            <li>Synthetic message generator to map patients into representative longitudinal medical records used in
-              training and testing (Java/JSON).</li>
-            <li>Message to JSON parser to support scenario based, data driven testing of application business rules.
+            <li>Created a synthetic-message generator (Java/JSON) that assembles representative longitudinal medical records 
+              for training and end-to-end system testing.</li>
+            <li>Built a message-to-JSON parser to enable scenario-based, data-driven testing of TMDS/MSAT business rules.
             </li>
           </ul>
+          <p>These tools allow the team to validate system behavior, train users, and evaluate new features despite the absence of real-world data feeds.
           <H3>Take Away</H3>
+          <p>When faced with challenges, I used my varied skills to design and build tools that helped ensure realistic synthetic data generation and
+          supported the team's testing and training needs; without compromising data security or privacy.
+          </p>
           <p>This work helped strengthen Python and JSON knowledge as well as develop siginicant domain knowledge
-            related to HL7 and other data formats in the Electronic Health Records domain. I place a priority in
-            understand the domain in which I'm working.</p>
-          <p>I believe domain knowledge &mdash; gathered through collaborative development &mdash; is mission critical
+          related to HL7 and other data formats in the Electronic Health Records domain. I place a priority in
+          understand the domain in which I'm working.</p>
+          <p>I believe domain knowledge &mdash; gathered thorough collaborative development &mdash; is mission critical
             to best serve the end users who are using tools to perform their duties more effectively.</p>
         </span>
       </section>
