@@ -385,6 +385,8 @@ nav a:visited{
 
 .port-item img {
   display: block;
+  height: 200px; /* Set your desired fixed height */
+  width: auto;  /* Width will scale proportionally */
 }
 
 .port-desc {
