@@ -241,7 +241,7 @@ nav a:visited{
 }
 
 .section-hero-home{
-  background-image: url(../img/LinkedInBanner.jpg);
+  background-image: url(../img/LinkedIn-background-filter.png);
   height: 30vh;
 }
 
@@ -341,7 +341,8 @@ nav a:visited{
 
   .home-about {
     /*background-image: url(../img/getdonations.jpg);*/
-    background-image: url(../img/aiAgentScreenShot.jpg);
+    /* background-image: url(../img/aiAgentScreenShot.jpg); */
+    background-image: url(../img/about-section-image-dark.png);
     padding-bottom: 10em;
     width: 100%;
   }
