@@ -385,8 +385,10 @@ nav a:visited{
 
 .port-item img {
   display: block;
-  height: 200px; /* Set your desired fixed height */
-  width: auto;  /* Width will scale proportionally */
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px; /* Set your desired fixed height */
+  width: auto; /* Width will scale proportionally */
 }
 
 .port-desc {
@@ -431,7 +433,8 @@ nav a:visited{
 
 .call-to-action {
   background-color: var(--background-color);
-  padding: 2em 0;
+  padding: 4em 0;
+  margin: 4em 0;
 }
 
 .cta-title {
