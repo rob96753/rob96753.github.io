@@ -12,6 +12,7 @@
     <nav class="navbar" id="index-navbar">
       <ul>
         <li><a href="./pages/about-me.html" id="index-navbar-about">About</a></li>
+        <li><a href="./pages/summary-acomplishments.html" id="index-navbar-about">Projects</a></li>
         <li><a href="./pages/cv.html" id="index-navbar-cv">CV</a></li>
         <li><a href="./pages/contact-me.html" id="index-navbar-contact">Contact</a></li>
       </ul>
@@ -19,17 +20,16 @@
   </header>
   <!-- A Hero Image is a large image with text, often placed at the top of a webpage -->
   <section class="section section-hero-home">
-    <div class="container">
+    <div >
       <!-- Parallax scrolling is a web site trend where the background content (i.e. an image) is moved at
           a different speed than the foreground content while scrolling. Click on the links below to see
           the difference between a website with and without parallax scrolling. -->
-      <h1 class="title parallax--box">Innovative Software Developer/Architect/Engineer</h1>
-      <a href="./pages/summary-acomplishments.html" class="button button-hightlight">View My Project Summaries</a>
+      <h1 class="title parallax--box">Innovative Software Developer/Architect/Engineer</h1>>
     </div>
   </section>
+
   <div class="container">
-    <section class="home-about">
-      <div class="home-about-textbox parallax--box">
+    <section class="section-one" id="index-about-me-section">
         <h1>About Me</h1>
         <p>I'm a team leader, systems integrator, and software engineer with past work experience in engineering relevant, practical tools and applications based 
           on stakeholder inputs.
@@ -38,79 +38,59 @@
         </p>
         <p>I have a strong background in software development, testing, engineering processes, and database management system deployments.
         </p>
-        <p>I have a learning mindset and I'm excited about the revolution in software and system development we're experiencing now. AI Agents are increasing our 
-          effectiveness and I'm spending time learning the benefits. But I also realize that strong fundamentals are still needed to create effective solutions.
+        <p>I have a learning mindset and I'm excited about the revolution in software and system development we're experiencing now. AI Agents are increase our 
+          effectiveness and I'm spending time learning the benefits of using AI for system deployment. But I also realize that strong fundamentals are still 
+          needed to create effective solutions.
         </p>
         <p>I'm seeking opportunities to increase efficiency in meeting group needs from ideas to working systems. The tools are here and are continuing to grow. Software development 
           has changed from gathering requirements and creating tasks to implement the requiremetns, to a more interactive development approach where end users can
           be a direct part of the development process, in real-time. I am excited to be a part of this change and to help others realize the benefits of these changes.
         </p>
-      </div>
+    </section>
+  
+    <section class="section-two" id="index-portfolio">
+      <h1>Projects And Roles</h1>
+      <!-- portfolio item 01 -->
+      <figure class="port-item">
+        <img src="img/Computer-Cluster-Small.jpg" alt="Platform Migration">
+        <figcaption class="port-desc">
+          <p>High Performance Analytics Platform</p>
+          <a href="./pages/summary-acomplishments.html#hpc_analytics" class="button button-accent button-small"
+            id="index-portfoilio-hpc">Architecture Migration</a>
+        </figcaption>
+      </figure>
+
+      <!-- portfolio item 02 -->
+      <figure class="port-item">
+        <img src="img/getdonations.jpg" alt="Data Generation and Simulation">
+        <figcaption class="port-desc">
+          <p>Data Generation for Training and Testing</p>
+          <a href="./pages/summary-acomplishments.html#data_gen_simm" class="button button-accent button-small">Data
+            Generation and Simulation</a>
+        </figcaption>
+      </figure>
+
+      <!-- portfolio item 03 -->
+      <figure class="port-item">
+        <img src="img/vibe-coding.jpg" alt="Software Development">
+        <figcaption class="port-desc">
+          <p>Analytical Tools</p>
+          <a href="./pages/summary-acomplishments.html#software_programming"
+            class="button button-accent button-small">Tool Development</a>
+        </figcaption>
+      </figure>
+
+      <!-- portfolio item 04 -->
+      <figure class="port-item">
+        <img src="img/WebDevelopment.jpg" alt="portfolio item">
+        <figcaption class="port-desc">
+          <p>Web Development</p>
+          <a href="./pages/summary-acomplishments.html#web_development" class="button button-accent button-small">Web
+            Development</a>
+        </figcaption>
+      </figure>
     </section>
   </div>
-  <section class="portfolio" id="index-portfolio">
-    <h1>Projects And Roles</h1>
-    <!-- portfolio item 01 -->
-    <figure class="port-item">
-      <img src="img/Computer-Cluster-Small.jpg" alt="Platform Migration">
-      <figcaption class="port-desc">
-        <p>High Performance Analytics Platform</p>
-        <a href="./pages/summary-acomplishments.html#hpc_analytics" class="button button-accent button-small"
-          id="index-portfoilio-hpc">Architecture Migration</a>
-      </figcaption>
-    </figure>
-
-    <!-- portfolio item 02 -->
-    <figure class="port-item">
-      <img src="img/getdonations.jpg" alt="Data Generation and Simulation">
-      <figcaption class="port-desc">
-        <p>Data Generation for Training and Testing</p>
-        <a href="./pages/summary-acomplishments.html#data_gen_simm" class="button button-accent button-small">Data
-          Generation and Simulation</a>
-      </figcaption>
-    </figure>
-
-    <!-- portfolio item 03 -->
-    <figure class="port-item">
-      <img src="img/CyberAttack-SmallImage.jpg" alt="Analytics and Collaboration">
-      <figcaption class="port-desc">
-        <p>Analytics and Collaboration</p>
-        <a href="./pages/summary-acomplishments.html#analytics_and_collaboration"
-          class="button button-accent button-small">Analytics and Collaboration</a>
-      </figcaption>
-    </figure>
-
-    <!-- portfolio item 04 -->
-    <figure class="port-item">
-      <img src="img/vibe-coding.jpg" alt="Software Development">
-      <figcaption class="port-desc">
-        <p>Analytical Tools</p>
-        <a href="./pages/summary-acomplishments.html#software_programming"
-          class="button button-accent button-small">Tool Development</a>
-      </figcaption>
-    </figure>
-
-    <!-- portfolio item 05 -->
-    <figure class="port-item">
-      <img src="img/ScrumPlanning-Kanban.jpg" alt="Agile Project Planning Approach">
-      <figcaption class="port-desc">
-        <p>Agile Project Planning</p>
-        <a href="./pages/summary-acomplishments.html#project_planning" class="button button-accent button-small">Project
-          Planning</a>
-      </figcaption>
-    </figure>
-
-    <!-- portfolio item 06 -->
-    <figure class="port-item">
-      <img src="img/WebDevelopment.jpg" alt="portfolio item">
-      <figcaption class="port-desc">
-        <p>Web Development</p>
-        <a href="./pages/summary-acomplishments.html#web_development" class="button button-accent button-small">Web
-          Development</a>
-      </figcaption>
-    </figure>
-  </section>
-
   <section class="call-to-action">
     <h1 class="title cta-title">Questions or Comments?<br />
       <span class="cta-title-span">Click the button below to contact me!</span>
@@ -119,7 +99,7 @@
   </section>
 
   <footer>
-    <div class="container">
+    <div class="container-footer">
       <div class="col-3">
         <p>The content contained in this site is owned by the author or licensed from the originator. All opinions
           expresses are the author's alone and not of a previous or current employer. If you have any questions or
