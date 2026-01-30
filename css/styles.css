@@ -679,6 +679,11 @@ nav a:visited{
     background-color: var(--background-color);
   }
 
+  .container-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
 }
 
 
