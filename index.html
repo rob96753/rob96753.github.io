@@ -9,6 +9,11 @@
 <body>
   <header class="header-text-box" id="index-header-text-box">
     <h1>Rob Nelson</h1>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <nav class="navbar" id="index-navbar">
       <ul>
         <li><a href="./pages/about-me.html" id="index-navbar-about">About</a></li>
@@ -31,26 +36,44 @@
   <div class="container">
     <section class="section-one" id="index-about-me-section">
         <h1>About Me</h1>
-        <p>I'm a team leader, systems integrator, and software engineer with past work experience in engineering relevant, practical tools and applications based 
+        <div class="detailed-about-me">
+          <p>I'm a team leader, systems integrator, and software engineer with past work experience in engineering relevant, practical tools and applications based 
           on stakeholder inputs.
-        </p>
-        <p>I take ownership of tasks and seek out domain experts to help identify how applications can improve their impact and success. 
-        </p>
-        <p>I have a strong background in software development, testing, engineering processes, and database management system deployments.
-        </p>
-        <p>I have a learning mindset and I'm excited about the revolution in software and system development we're experiencing now. AI Agents are increase our 
-          effectiveness and I'm spending time learning the benefits of using AI for system deployment. But I also realize that strong fundamentals are still 
-          needed to create effective solutions.
-        </p>
-        <p>I'm seeking opportunities to increase efficiency in meeting group needs from ideas to working systems. The tools are here and are continuing to grow. Software development 
-          has changed from gathering requirements and creating tasks to implement the requiremetns, to a more interactive development approach where end users can
-          be a direct part of the development process, in real-time. I am excited to be a part of this change and to help others realize the benefits of these changes.
-        </p>
+          </p>
+          <p>I take ownership of tasks and seek out domain experts to help identify how applications can improve their impact and success. 
+          </p>
+          <p>I have a strong background in software development, testing, engineering processes, and database management system deployments.
+          </p>
+          <p>I have a learning mindset and I'm excited about the revolution in software and system development we're experiencing now. AI Agents are increase our 
+            effectiveness and I'm spending time learning the benefits of using AI for system deployment. But I also realize that strong fundamentals are still 
+            needed to create effective solutions.
+          </p>
+          <p>
+            I'm excited for opportunities to use my skills to help build effective solutions that improve end user experiences and outcomes.
+          </p>
+        </div>
+        <div class="highlight-about-me">
+          <p>I'm a team leader, systems integrator, and software engineer with past work experience  engineering relevant, practical tools and applications based 
+          on stakeholder inputs. 
+          </p>
+          <p>I have a learning mindset and I'm excited to use the new AI tools to help build effective solutions that improve end user experiences and outcomes.</p>
+        </div>       
     </section>
   
     <section class="section-two" id="index-portfolio">
       <h1>Projects And Roles</h1>
+
       <!-- portfolio item 01 -->
+      <figure class="port-item">
+        <img src="img/vibe-coding.jpg" alt="AI/LLM Applications">
+        <figcaption class="port-desc">
+          <p>LLM Application Deployment</p>
+          <a href="./pages/summary-acomplishments.html#ai-deployment"
+            class="button button-accent button-small">LLM Applications</a>
+        </figcaption>
+      </figure>
+      
+      <!-- portfolio item 02 -->
       <figure class="port-item">
         <img src="img/Computer-Cluster-Small.jpg" alt="Platform Migration">
         <figcaption class="port-desc">
@@ -60,23 +83,13 @@
         </figcaption>
       </figure>
 
-      <!-- portfolio item 02 -->
+      <!-- portfolio item 03 -->
       <figure class="port-item">
         <img src="img/getdonations.jpg" alt="Data Generation and Simulation">
         <figcaption class="port-desc">
           <p>Data Generation for Training and Testing</p>
           <a href="./pages/summary-acomplishments.html#data_gen_simm" class="button button-accent button-small">Data
             Generation and Simulation</a>
-        </figcaption>
-      </figure>
-
-      <!-- portfolio item 03 -->
-      <figure class="port-item">
-        <img src="img/vibe-coding.jpg" alt="Software Development">
-        <figcaption class="port-desc">
-          <p>Analytical Tools</p>
-          <a href="./pages/summary-acomplishments.html#software_programming"
-            class="button button-accent button-small">Tool Development</a>
         </figcaption>
       </figure>
 
@@ -145,6 +158,7 @@
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
   <script src="js/parallax.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 

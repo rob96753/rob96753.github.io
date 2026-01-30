@@ -35,6 +35,11 @@
 <body>
   <header class="header-text-box" id="index-header-text-box">
     <h1>Rob Nelson</h1>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <nav class="navbar" id="index-navbar">
       <ul>
         <li><a href="../index.html" id="index-navbar-home">Home</a></li>
@@ -49,9 +54,9 @@
         <h1>Rob Nelson</h1>
       </div>
       <div class="section-contact-info-contact" id="section-contact-info-contact">
-        <p><span>Email </span>rob.nelson.57@icloud.com</p>
-        <p><span>Phone </span>(808) 359-6148</p>
-        <p><span>Address </span>95 Ka'Ikena Loop, Wailuku, HI, 96793</p>
+        <p><span>Email</span>rob.nelson.57@icloud.com</p>
+        <p><span>Phone</span>808.359.6148</p>
+        <p><span>Address</span>95 Ka'Ikena Loop, Wailuku, HI, 96793</p>
       </div>
     </div>
     <div class="section-experience-summary">
@@ -72,14 +77,14 @@
         <div class="work-history-title">
           <h1>Work History</h1>
         </div>
-        <div class="job-description" id="AMAZON_AWS_SYSDEV">
+        <div class="job-description" id="RETIREMENT_PROJECTS">
           <H1>Retirement, Jan 2023 - present</H1>
           <br/>
           <p>Since retiring from full-time employment in Jan. 2023, I have been focusing on personal projects
             and self-study in web development, mobile app development, and cloud computing. I have created several
             progressive web apps and mobile apps using Dart/Flutter to enhance my skills and explore new technologies.
             Some of the projects I have worked on include:</p>
-          <ul>
+          <ul class="retirement-projects-list">
             <li><b>Akimai Hawaii</b> Simulates the State of Hawaii Agricultural Form as progressive web app. A paper form was used until March 2025. Prior to the electronic form release,
             I created phone and web apps as a personal learning tool for Dart/Flutter development. The app captures traveler information and generates a PDF of the completed form for 
             submission to the State of Hawaii. I created a progressive web app and phone app version to explore differences in implementation.</li>
@@ -89,13 +94,11 @@
             <li><b>TravelEZ</b> daily travel itinerary planner implemented as a progressive web app and phone app. Takes user input of location, activity level, meal preferences,
             and uses AI to generate suggested activities and restaurants. It assists the user by providing a simple form they can use to create an AI query and generate 
             an itinerary based on their preferences.  Consistently building the AI query improves accuracy in results and optimizes the query for speed.</li>
-            <li><b>LayoverEZ</b> a progressive web app that targets travelers who have a long layover at an air, bus, ferry, or train terminal. The traveler may specify
-            the type of activity they would want, and the app uses AI to provide some ideas, using the layover time and factoring in travel, security, and customs times 
-            that may shorten the available net time.</li>
             <li><b>SkillsEZ</b> a learning plan builder implemented as a responsive web app using AI to help learners create personalized learning plans. The app allows users to input their 
             background, education, and learning goals: SkillsEZ generates a customized learning plan displayed within the web application.</li>
           </ul>
-          <p>This work helps me stay current with AI and web app development trends. It also helps reinforce learning in mobile development.</p>
+          <p>The theme of these apps is to collect input for the user and then formulate an optimized query that runs against an LLM to provide relevant resutsl. This work helps me stay 
+            current with AI and web app development trends. It also helps reinforce learning in web and mobile development.</p>
           </div>
         <div class="job-description" id="AMAZON_AWS_SYSDEV">
           <H1>System Developer (SysDev) Engineer II; Amazon Web Services, Dec. 2021 - Dec. 2022</H1>
@@ -249,5 +252,6 @@
 
     </section>
   </section>
+<script src="../js/main.js"></script>
 </body>
 </html>

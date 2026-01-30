@@ -56,9 +56,15 @@ body {
 .section-contact-info a {
   text-align: left;
   font-weight: normal;
-  font-size: 3rem;
-  background-color: var(--section-background-color);
-  padding: 1rem 3rem 1rem 3rem;
+  font-size: inherit;
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+  padding: 0;
+}
+
+.section-contact-info a:hover {
+  text-decoration: underline;
 }
 
 .section-contact-info p:last-child {
@@ -472,6 +478,14 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
+  .section-experience-summary {
+    display: none;
+  }
+
+  .retirement-projects-list li{
+    font-size: 1rem;
+  }
+
   
 }
 
@@ -516,7 +530,7 @@ body {
   }
   
   .section-education {
-    grid-template-columns: 1fr 1fr;
+    grid-template-collumns: 1fr 1fr;
   }
 
   .section-education p {
@@ -544,6 +558,8 @@ body {
   .item-skill:first-child {
     margin-top: 2rem;
   }
+
+  
 
 }
 

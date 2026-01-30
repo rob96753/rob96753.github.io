@@ -7,6 +7,7 @@
   --highlight-color: #F9E79F;
   --background-color: #232323;
   --light-background-color: #F2F3F4;
+  --high-visibility-color: #edede7;
 }
 /*
 
@@ -32,7 +33,7 @@ img {
 }
 
 .home-about-textbox {
-  background-color: #232323;
+  background-color: var(--background-color);
   padding: 1em;
   height: auto;
   margin-left: 0;
@@ -44,7 +45,7 @@ img {
   text-align: center;
   transform: translateX(-50%);
   margin-top: -5rem;
-  background: #232323;
+  background:  var(--background-color);
   padding: 2rem .145rem 0rem 2rem;
 }
 
@@ -60,7 +61,7 @@ img {
 .container {
   display: grid;
   grid-template-columns: 50% 50%;
-  background-color: #232323;
+  background-color: var(--background-color);
   grid-gap: 1rem;
   padding: 1rem;
 }
@@ -69,7 +70,7 @@ img {
   padding: 1rem;
   border: 1px solid var(--accent-color);
   outline-offset: -2rem;
-  background-color: #232323;
+  background-color:   var(--background-color);
   width: 100%;
   height: auto;
 }
@@ -82,13 +83,13 @@ img {
 .section-two {
   padding: 1rem;
   border: 1px solid var(--accent-color);
-  background-color: #232323;
+  background-color: var(--background-color);
   width: 100%;
   height: auto;
 }
 
 .section-one p{
-  color: white;
+  color: var(--high-visibility-color);
   text-align: left;
   margin: 0;
 }
@@ -98,7 +99,7 @@ img {
 }
 
 .section-two h1 {
-  color: whitesmoke;
+  color: var(--high-visibility-color);
   margin-top: 0;
 }
 
@@ -128,8 +129,8 @@ img {
 }
 
 .button-accent {
-  color: #00ff6c;
-  border-color: #00ff6c;
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .button-hightlight {
@@ -192,6 +193,7 @@ header {
   background: rgba(23,23,23,0);
 }
 
+
 .header-text-box h1 {
   display: inline-block;
   font-family: 'Reenie Beanie', sans-serif;
@@ -205,6 +207,7 @@ header {
 
 .header-text-box h1 {
   color: var(--accent-color);
+
 }
 
 .header-text-projects h1 {
@@ -244,6 +247,40 @@ nav a:visited{
   background-color: #232323;
 }
 
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+  background: transparent;
+  border: none;
+  float: right;
+  margin-top: 1rem;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 4px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
 
 
 
@@ -258,10 +295,49 @@ nav a:visited{
 }
 
 @media (max-width:40rem) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: rgba(35, 35, 35, 0.98);
+    padding: 4rem 2rem 2rem 2rem;
+    margin: 0;
+    z-index: 1000;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .navbar nav li {
+    display: block;
+    margin: 1.5rem 0;
+    text-align: left;
+  }
+
+  nav li {
+    display: block;
+    margin: 1.5rem 0;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+    display: block;
+    padding: 0.5rem;
+  }
+
   .navbar {
     margin-top: 0rem;
-    display: flex;
-    justify-content: center
   }
 
   .container h1 {
@@ -575,6 +651,34 @@ nav a:visited{
   .col-1:last-child {
     margin-bottom: 1rem;
   }
+
+  .header-text-box h1 {
+    font-size: 3rem;
+    -webkit-text-stroke: 1px black; 
+    text-stroke: 1px black; 
+  }
+
+  .section-hero-home {
+    font-size: 1rem;
+  }
+  
+  .container {
+    grid-template-columns: 100%;
+  }
+
+  .detailed-about-me {
+    display: none;
+  }
+
+  .highlight-about-me {
+    display: block;
+    color: var(--accent-color);
+  }
+
+  #phone-number {
+    background-color: var(--background-color);
+  }
+
 }
 
 
