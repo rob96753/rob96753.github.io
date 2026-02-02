@@ -40,6 +40,12 @@ img {
   color: #FFF;
 }
 
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
 .home-about-textbox h1 {
   color: var(--accent-color);
   text-align: center;
@@ -628,6 +634,8 @@ nav a:visited{
   .col-1 {
     width: 16.6666%;
   }
+
+
 }
 
 @media (max-width: 30rem) {
@@ -653,7 +661,8 @@ nav a:visited{
   }
 
   .header-text-box h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: 700;
     -webkit-text-stroke: 1px black; 
     text-stroke: 1px black; 
   }
@@ -682,6 +691,13 @@ nav a:visited{
   .container-footer {
     flex-direction: column;
     text-align: center;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    -webkit-text-stroke: 1px black; 
+    text-stroke: 1px black;
   }
 
 }
