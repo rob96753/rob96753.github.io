@@ -13,11 +13,16 @@ body {
 
 .section-about-me {
   background-color: var(--section-background-color);
-  color: var(--section-text-color);;
+  color: var(--section-text-color);
   max-width: 90%;
   padding: 5rem 10rem 5rem 10rem;
   margin: 10rem 5% 10rem 5%;
   border-radius: 1rem;
+}
+
+.section-hero-about {
+  grid-column: 1 / -1;
+  width: 100%;
 }
 
 .section-about-me p {
@@ -33,4 +38,30 @@ body {
   text-decoration: none;
   color: var(--accent-color);
   font-size: 2rem;
+}
+
+@media (max-width: 30rem) {
+  .section-about-me {
+    max-width: 100%;
+    padding: 1rem;
+    margin: 0rem 0rem;
+    font-size: 1.5rem;
+  }
+
+ .section-about-me p {
+  text-align: left;
+  font-size: 1rem;
+}
+
+  .link-to-funpage a {
+    font-size: 0.5rem;
+  }
+
+  .section-hero-about{
+    background-image: url(../img/python-code.jpg);
+    height: 25vh;
+
+    max-width: 100%;
+    width: 100%;
+  }
 }
