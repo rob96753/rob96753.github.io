@@ -149,3 +149,17 @@ Standalone Mode: If using certbot --standalone, it will directly bind to port 80
 
 Webroot/Plugin Mode: Using --webroot, --apache, or --nginx allows the existing web server to handle the challenge, which still requires port 80 to be accessible.
 Security Recommendation: It is recommended to keep port 80 open but configured to redirect all traffic to HTTPS, while specifically allowing the .well-known/acme-challenge/ path for validation. 
+
+### Migrating to a new server
+
+To manually force a Let's Encrypt certificate reissue (renewal) before its scheduled time, use the command sudo certbot renew --force-renewal. To renew a specific certificate by domain name, use sudo certbot certonly --cert-name example.com --force-renew. For users employing acme.sh, the command is acme.sh --renew -d example.com --force. 
+
+#### Common Reissue Commands:
+    Force Renew All: sudo certbot renew --force-renewal
+    Force Renew Specific Domain: sudo certbot certonly --cert-name example.com --force-renewal (replace example.com with your certificate name found via certbot certificates).
+    Dry Run (Test): sudo certbot renew --dry-run.
+    acme.sh User: acme.sh --renew -d example.com --force. 
+#### Important Notes:
+    Rate Limits: Do not abuse the --force-renewal flag, as Let's Encrypt has strict rate limits on issuing duplicate certificates (5 per week).
+    Web Server Reload: If the certificate does not update automatically in your web server, you may need to reload or restart Apache/Nginx (e.g., sudo systemctl reload apache2 or sudo systemctl reload nginx).
+    Manual Mode: If you used certbot --manual, you must rerun the original command to reissue. 
