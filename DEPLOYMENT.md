@@ -107,3 +107,45 @@ Re-run the `rsync` command after changes.
 - 404s: confirm `root` points to the directory with `index.html`.
 - Permission errors: ensure nginx can read the files.
 - Config errors: run `sudo nginx -t`.
+
+## Certbot Certificates
+
+rob@skills-ez-server:/etc/nginx/sites-available $ sudo certbot certificates
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Found the following certs:
+  Certificate Name: ka-ikena.tech
+    Serial Number: 5940eec86434f895db7b2c6c8393f53d17c
+    Key Type: ECDSA
+    Domains: ka-ikena.tech profile.ka-ikena.tech tools.ka-ikena.tech www.ka-ikena.tech
+    Expiry Date: 2026-05-06 05:24:34+00:00 (VALID: 89 days)
+    Certificate Path: /etc/letsencrypt/live/ka-ikena.tech/fullchain.pem
+    Private Key Path: /etc/letsencrypt/live/ka-ikena.tech/privkey.pem
+  Certificate Name: skillsez.me
+    Serial Number: 676f83031585aa09d3535a9666c93e51721
+    Key Type: ECDSA
+    Domains: skillsez.me www.skillsez.me
+    Expiry Date: 2026-05-01 01:55:46+00:00 (VALID: 84 days)
+    Certificate Path: /etc/letsencrypt/live/skillsez.me/fullchain.pem
+    Private Key Path: /etc/letsencrypt/live/skillsez.me/privkey.pem
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+### How to Fix Expired Certificates
+If the automatic renewal (usually via cron or systemd) failed, you can manually renew them: 
+Run Renew Command: Execute sudo certbot renew on the server.
+
+Force Renewal: If the certificate has already expired, you can use sudo certbot renew --force-renewal to obtain a new certificate.
+
+Check Renewal Status: Verify configuration files in /etc/letsencrypt/renewal/ to ensure the renewal process is properly configured. 
+Certbot automatically attempts renewal 30 days before the 90-day expiry. Setting up a reliable cron job or systemd timer is the best way to prevent expiration, as it runs the renewal check multiple times a day. 
+
+Certbot generally requires port 80 to be open and accessible to the public internet for HTTP-01 challenge validation. While it does not need to be open permanently, it must be accessible during certificate issuance and renewal to verify domain ownership. 
+
+Key details regarding port 80 and Certbot:
+Alternative Option (DNS-01): If port 80 cannot be opened, you can use the dns-01 challenge, which requires no inbound ports (80 or 443).
+
+Standalone Mode: If using certbot --standalone, it will directly bind to port 80, requiring any existing web server (like Apache or Nginx) on that port to be temporarily stopped.
+
+Webroot/Plugin Mode: Using --webroot, --apache, or --nginx allows the existing web server to handle the challenge, which still requires port 80 to be accessible.
+Security Recommendation: It is recommended to keep port 80 open but configured to redirect all traffic to HTTPS, while specifically allowing the .well-known/acme-challenge/ path for validation. 
