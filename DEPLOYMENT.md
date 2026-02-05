@@ -163,3 +163,8 @@ To manually force a Let's Encrypt certificate reissue (renewal) before its sched
     Rate Limits: Do not abuse the --force-renewal flag, as Let's Encrypt has strict rate limits on issuing duplicate certificates (5 per week).
     Web Server Reload: If the certificate does not update automatically in your web server, you may need to reload or restart Apache/Nginx (e.g., sudo systemctl reload apache2 or sudo systemctl reload nginx).
     Manual Mode: If you used certbot --manual, you must rerun the original command to reissue. 
+
+
+## Loading Profile
+
+sudo git pull  https://github.com/rob96753/rob96753.github.io.git master
